@@ -1,0 +1,78 @@
+:root {
+    --primary-font: 'Open Sans', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    /* Text colors */
+    --main-txt-cl:
+        --secondary-txt-cl: --accent-txt-cl:
+        /* Bg colors */
+        --main-bg-cl: --secondary-bg-cl: --accent-bg-cl:
+        /* Others */
+        --indent: 30px;
+    --items: 1;
+}
+
+html {
+    Box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--primary-font);
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+}
+
+
+/* Reset Start */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+Img {
+    Display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.link {
+    Color: currentColor;
+    text-decoration: none
+}
+
+.list {
+    List-style: none;
+    Padding: 0;
+    Margin: 0;
+}
+
+Button {
+    Font-family: inherit;
+    Color: currentColor;
+    Cursor: pointer
+}
+
+/* Reset End */
+
+.Section {
+    Padding-top: 120px;
+    Padding-bottom: 120px;
+}
+
+.Container {
+    Width: 1200 px;
+    Margin-left: auto;
+    Margin-right: auto;
+    Padding-left: 15px;
+    Padding-right: 15px;
+
+    Outline: 2px solid red;
+    Outline-offset: -2px;
+}
