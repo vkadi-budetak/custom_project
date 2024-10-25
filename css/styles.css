@@ -90,8 +90,9 @@ Button {
     left: 50%;
     transform: translate(-50%, -50%);
 
-   
+
 }
+
 .btn-modal {
     border: 1px solid rgb(193, 192, 192);
     border-radius: 25px;
@@ -113,31 +114,36 @@ Button {
 }
 
 @keyframes shake-horizontal {
+
     0%,
     20% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     2%,
     6%,
     10%,
     14% {
-      transform: translateX(-10px);
+        transform: translateX(-10px);
     }
+
     4%,
     8%,
     12% {
-      transform: translateX(10px);
+        transform: translateX(10px);
     }
+
     16% {
-      transform: translateX(8px);
+        transform: translateX(8px);
     }
+
     18% {
-      transform: translateX(-8px);
+        transform: translateX(-8px);
     }
-  }
+}
 
 
-  /**
+/**
   |============================
   | Modal styles
   |============================
@@ -374,3 +380,81 @@ Button {
     border: 1px solid rgb(89, 141, 102);
     color: rgb(89, 141, 102);
 }
+
+/**
+  |============================
+  | Mobile menu styles
+  |============================
+*/
+
+.header-box-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #3f51b5;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #fff;
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.mobile-text {
+    margin-bottom: auto;
+}
+
+.mobile-contacts {}
